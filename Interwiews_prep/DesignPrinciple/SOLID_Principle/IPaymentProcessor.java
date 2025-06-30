@@ -1,4 +1,4 @@
-package Interwiews_prep.DesignPrinciple.SOLID_Princille;
+package Interwiews_prep.DesignPrinciple.SOLID_Principle;
 
 interface IPaymentProcessor {
     boolean processPayment(double amount);

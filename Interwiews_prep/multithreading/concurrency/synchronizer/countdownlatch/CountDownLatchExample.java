@@ -15,7 +15,7 @@ public class CountDownLatchExample {
         }
         try {
             latch.await();
-            System.out.println("All thread Com[pleted the process");
+            System.out.println("All thread Completed the process");
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

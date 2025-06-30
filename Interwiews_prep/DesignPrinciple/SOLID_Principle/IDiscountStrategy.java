@@ -1,4 +1,4 @@
-package Interwiews_prep.DesignPrinciple.SOLID_Princille;// OCP Refactoring: Open for Extension, Closed for Modification
+package Interwiews_prep.DesignPrinciple.SOLID_Principle;// OCP Refactoring: Open for Extension, Closed for Modification
 
 // --- Discount Strategies ---
 // Base interface for all discount types (OCP & LSP)

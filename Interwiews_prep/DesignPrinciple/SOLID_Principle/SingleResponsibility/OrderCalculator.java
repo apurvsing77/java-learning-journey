@@ -1,4 +1,4 @@
-package Interwiews_prep.DesignPrinciple.SOLID_Princille.SingleResponsibility;
+package Interwiews_prep.DesignPrinciple.SOLID_Principle.SingleResponsibility;
 
 public class OrderCalculator {
 

@@ -1,4 +1,4 @@
-package Interwiews_prep.DesignPrinciple.SOLID_Princille;// SRP Refactoring: Separate Responsibilities
+package Interwiews_prep.DesignPrinciple.SOLID_Principle;// SRP Refactoring: Separate Responsibilities
 
 import java.util.List;
 

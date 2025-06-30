@@ -1,4 +1,4 @@
-package Interwiews_prep.DesignPrinciple.SOLID_Princille;
+package Interwiews_prep.DesignPrinciple.SOLID_Principle;
 
 import java.util.Arrays;
 
