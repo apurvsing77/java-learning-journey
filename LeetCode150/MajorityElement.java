@@ -17,7 +17,7 @@ public class MajorityElement {
             map.put(nums[i],map.getOrDefault(nums[i],0)+1);
 
         }
-        int res = 0;
+
 
         for (int key : map.keySet()) {
             int freq = map.get(key);
