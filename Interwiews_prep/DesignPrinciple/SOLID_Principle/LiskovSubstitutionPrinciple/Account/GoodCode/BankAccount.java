@@ -1,3 +1,4 @@
+/*
 package Interwiews_prep.DesignPrinciple.SOLID_Principle.LiskovSubstitutionPrinciple.Account.GoodCode;
 
 import java.nio.file.Watchable;
@@ -44,8 +45,9 @@ class main {
         bk.getBalance();
         Withdrawal account = new SavingsAccount();
 
+        ((SavingsAccount)account).deposit(1111);
         account.withdraw(250);
-        ((BankAccount)account).getBalance();
+        ((SavingsAccount)account).getBalance();
 
         BankAccount bankAccount = new FixedDepositAccount();
         bankAccount.getBalance();
@@ -54,4 +56,41 @@ class main {
          bankAccount.getBalance();
 
     }
+}*/
+
+
+package Interwiews_prep.DesignPrinciple.SOLID_Principle.LiskovSubstitutionPrinciple.Account.GoodCode;
+
+
+
+// BankAccount base class hai sabhi accounts ke liye
+public class BankAccount {
+    protected double amount; // Protected rakha hai takki child classes access kar saken
+
+    // Constructor to initialize the balance
+    public BankAccount(double initialAmount) {
+        this.amount = initialAmount;
+        System.out.println("New Bank Account created with initial balance: " + initialAmount);
+    }
+    // Default constructor (if needed, but usually better to initialize)
+    public BankAccount() {
+        this(0.0); // Call the other constructor with default 0.0
+    }
+
+    public void getBalance() {
+        System.out.println("Current balance: " + amount);
+    }
+
+    public void deposit(double amount) {
+        if (amount > 0) {
+            this.amount += amount;
+            System.out.println("Deposited: " + amount);
+        } else {
+            System.out.println("Not sufficient balance .");
+        }
+    }
 }
+
+
+
+
