@@ -29,7 +29,7 @@ public class RomanToInteger {
                 res=res+map.get(str.charAt(i));
 
             }
-            }
+        }
         return res;
 
     }

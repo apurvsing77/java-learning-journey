@@ -9,7 +9,7 @@ public class NumberToRoman {
     public static String intToRoman(int num) {
         String res ="";
         String[] m ={"", "M", "MM", "MMM"};
-        String[] c={"", "C", "CC", "CCC","CD","D", "DC", "DCC", "DXXX", "CM"};
+        String[] c={"", "C", "CC", "CCC","CD","D", "DC", "DCC", "DCCC", "CM"};
         String[] x={"","X", "XX", "XXX", "XL","L","LX", "LXX","LXXX", "XC"};
         String[] i={"","I","II","III","IV","V","VI", "VII","VIII","IX"};
 
