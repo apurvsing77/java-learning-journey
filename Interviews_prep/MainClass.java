@@ -11,6 +11,7 @@ public class MainClass {
 
         // simple message
         System.out.println("abc");
+        System.out.println("abc");
        Parent parent = new Parent();
            parent.show();
            parent.display();
