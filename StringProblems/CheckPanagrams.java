@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class CheckPanagrams {
     public static void main(String[] args) {
-        String str = "The quick brown fox jumps over the dog";
+        String str = "The quick brown fox jumps over the lazy dog";
         if (check(str)){
             System.out.println("This sentens is panagram");
         }else

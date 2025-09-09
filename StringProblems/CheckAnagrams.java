@@ -6,7 +6,7 @@ import java.util.Map;
 public class CheckAnagrams {
     public static void main(String[] args) {
         String str1 = "anagram";
-        String str2 = "grammar";
+        String str2 = "qramaan";
         int k=1;
         if (check(str1,str2,k)){
             System.out.println("Yes, It is Anagrams ");
@@ -33,7 +33,7 @@ public class CheckAnagrams {
         for (char ch: map.keySet()) {
             count += map.get(ch);
         }
-        if (count > k){
+        if (count >= k){
             return false;
         }else
             return true;

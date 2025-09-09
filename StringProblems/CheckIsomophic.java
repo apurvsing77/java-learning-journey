@@ -8,9 +8,9 @@ public class CheckIsomophic {
         String str1 = "babc";
         String str2 = "kikp";
         if (isisomorphic(str1,str2)){
-            System.out.println("Strin is isomorphic ");
+            System.out.println("String is isomorphic ");
         }else {
-            System.out.println(" Strin is NOT isomorphic ");
+            System.out.println(" String is NOT isomorphic ");
         }
     }
     static  boolean isisomorphic(String str1, String str2){
