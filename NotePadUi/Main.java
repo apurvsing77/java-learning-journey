@@ -1,4 +1,4 @@
-package NotePadeUi;
+package NotePadUi;
 
 public class Main {
     public static void main(String[] args) {

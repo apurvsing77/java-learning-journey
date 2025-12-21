@@ -2,10 +2,10 @@ package Leetcode150Part2;
 
 public class BuyandSellStock {
     public static void main(String[] args) {
-        int[] price = {7, 2, 5, 6,1, 4, 3};   //[1,2,3,4,5]
-        System.out.println(maxProfit(price));
+        int[] price = {7, 2, 5, 6,1, 4, 3,9};   //[1,2,3,4,5]
+        System.out.println(maxProfit1(price));
     }
-//    static  int maxProfit(int[] arr){
+    static  int maxProfit1(int[] arr){
 //        int buy_price=arr[0], current_profit=0,max_profit=0;
 //        for (int i = 1; i < arr.length ; i++) {
 //            buy_price =(buy_price > arr[i]? arr[i] :buy_price );
@@ -14,7 +14,22 @@ public class BuyandSellStock {
 //        }
 //        System.out.println("buying price : "+buy_price+"\nSelling Price : "+current_profit);
 //        return max_profit;
-//    }
+         int minPrice = Integer.MAX_VALUE;
+         int maxProfit = 0;
+         for (int price : arr){
+             if (price < minPrice) {
+                 minPrice = price;
+             }else {
+                 int profit = price -minPrice;
+                 if (profit > maxProfit){
+                     maxProfit =profit;
+
+                 }
+             }
+         }
+         return  maxProfit;
+   }
+
 
 
         public static int maxProfit(int[] prices) {
@@ -36,6 +51,27 @@ public class BuyandSellStock {
 
             return maxProfit;
         }
+    public static int maxProfit3(int[] prices) {
+
+        // [7,1,5,3,6,4]
+        int minPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
+        int secondMaxProfit = 0;
+        for (int price : prices){
+            if (price < minPrice){
+                minPrice = price;
+            }else {
+                int profit = price - minPrice;
+                if (profit < maxProfit){
+                    maxProfit = profit;
+                }
+            }
+        }
+
+
+        return maxProfit;
+    }
+
 
 
 }

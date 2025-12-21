@@ -1,9 +1,9 @@
-package Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.Client;
+package Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.ShapeExample.Client;
 
 
-import Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.Factory.ShapeFactory;
-import Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.Product.CircleProduct;
-import Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.ShapeProduct;
+import Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.ShapeExample.Factory.ShapeFactory;
+import Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.ShapeExample.Product.CircleProduct;
+import Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.ShapeExample.ShapeProduct;
 
 public class ShapeClient {
     public static void main(String[] args) {
@@ -17,10 +17,10 @@ public class ShapeClient {
 //            circle.draw();
 //        }
 //
-//        ShapeProduct rectangle = ShapeFactory.createShape("RECTANGLE"); // Case-insensitive
-//        if (rectangle != null) {
-//            rectangle.draw();
-//        }
+        ShapeProduct rectangle = ShapeFactory.createShape("RECTANGLE"); // Case-insensitive
+        if (rectangle != null) {
+            rectangle.draw();
+        }
 //
 //        ShapeProduct square = ShapeFactory.createShape("square");
 //        if (square != null) {

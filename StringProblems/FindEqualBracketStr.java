@@ -2,8 +2,8 @@ package StringProblems;
 
 public class    FindEqualBracketStr {
     public static void main(String[] args) {
-       // String str = "((()(()()(()))()())";
-        String str ="()))))(";
+        String str = "((()(()()(()))()())";
+        //String str ="(())))(";// ()))))(
         System.out.println(findEqualBrac(str));
     }
     static  int findEqualBrac(String str){

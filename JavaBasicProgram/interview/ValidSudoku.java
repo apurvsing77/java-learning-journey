@@ -1,6 +1,7 @@
 package JavaBasicProgram.interview;
 
 import java.util.HashSet;
+import java.util.Set;
 
 /*
  36. Valid Sudoku
@@ -40,7 +41,7 @@ public class ValidSudoku {
                 {'.','.','.','4','1','9','.','.','5'},
                 {'8','.','.','.','.','.','.','7','9'}
         };
-        System.out.println(isValidSudoku(newSudoku));
+        System.out.println(isValidSudoku(sudoku));
 
 
     }
@@ -81,6 +82,24 @@ public class ValidSudoku {
             }
         }
 
+        return true;
+    }
+
+    public static boolean isValidSudoku2(char[][] board) {
+        Set<String> seen = new HashSet<>();
+
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                char num = board[i][j];
+                if (num == '.') continue;
+
+                if (!seen.add("row" + i + num) ||
+                        !seen.add("col" + j + num) ||
+                        !seen.add("box" + (i / 3) + (j / 3) + num)) {
+                    return false;
+                }
+            }
+        }
         return true;
     }
 }

@@ -1,8 +1,7 @@
-package NotePadeUi;
+package NotePadUi;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 
 public class JFontChooser extends JPanel {
     private JComboBox<String> fontBox;

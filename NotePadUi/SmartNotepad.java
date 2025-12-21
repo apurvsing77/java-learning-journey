@@ -1,4 +1,4 @@
-package NotePadeUi;
+package NotePadUi;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;

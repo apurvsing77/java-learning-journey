@@ -1,9 +1,9 @@
-package Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.Factory;
+package Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.ShapeExample.Factory;
 
-import Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.Product.CircleProduct;
-import Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.Product.RectangleProduct;
-import Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.Product.SquareProduct;
-import Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.ShapeProduct;
+import Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.ShapeExample.Product.CircleProduct;
+import Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.ShapeExample.Product.RectangleProduct;
+import Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.ShapeExample.Product.SquareProduct;
+import Interviews_prep.DesignPattern.CreationalPattern.FactoryPattern.ShapeExample.ShapeProduct;
 
 public class  ShapeFactory {
     private ShapeProduct shapeProduct;
