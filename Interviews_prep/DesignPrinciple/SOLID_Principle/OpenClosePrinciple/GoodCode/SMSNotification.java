@@ -3,6 +3,6 @@ package Interviews_prep.DesignPrinciple.SOLID_Principle.OpenClosePrinciple.GoodC
 public class SMSNotification implements Notification {
     @Override
     public void sendNotification(String message) {
-        System.out.println("Sending massage via SMS : " + message);
+        System.out.println("Sending massage via SMSSender : " + message);
     }
 }

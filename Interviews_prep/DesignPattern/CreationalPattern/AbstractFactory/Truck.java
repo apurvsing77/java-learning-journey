@@ -1,5 +1,5 @@
 package Interviews_prep.DesignPattern.CreationalPattern.AbstractFactory;
 
-interface Truck {
+public interface Truck {
     String getModel();
 }

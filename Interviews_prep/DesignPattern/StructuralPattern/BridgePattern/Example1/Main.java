@@ -1,4 +1,4 @@
-package Interviews_prep.DesignPattern.StructuralPattern.BridgePattern;
+package Interviews_prep.DesignPattern.StructuralPattern.BridgePattern.Example1;
 
 import Interviews_prep.DesignPattern.StructuralPattern.BridgePattern.Example1.RefinedAbstraction.Circle;
 import Interviews_prep.DesignPattern.StructuralPattern.BridgePattern.Example1.RefinedAbstraction.Square;

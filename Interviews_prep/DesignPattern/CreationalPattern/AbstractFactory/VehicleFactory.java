@@ -1,6 +1,6 @@
 package Interviews_prep.DesignPattern.CreationalPattern.AbstractFactory;
 
-interface VehicleFactory {
+public interface VehicleFactory {
     Car createCar();
     Truck createTruck();
 }

@@ -45,7 +45,7 @@ public class Main {
         System.out.println("Order3 Status: " + order3.getStatus());
 
 
-        // --- Demonstrate SRP for Email ---
+        // --- Demonstrate SRP for EmailSender ---
         EmailService emailService = new EmailService();
         emailService.sendConfirmationEmail(order);
     }
