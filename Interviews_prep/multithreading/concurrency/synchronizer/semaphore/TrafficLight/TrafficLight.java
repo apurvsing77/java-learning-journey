@@ -22,7 +22,7 @@ public class TrafficLight {
         while(true) {
             try {
                 System.out.println(name + " is waiting for a permit");
-                sem.acquire(4);
+                sem.acquire();
                 System.out.println(name + " gets a permit");
                 System.out.println("Green");
                 sleep(7000);
@@ -36,7 +36,7 @@ public class TrafficLight {
                 break;
             } finally {
                 System.out.println(name + " releases the permit. STOP.");
-                sem.release(4);
+                sem.release();
             }
             try {
                 sleep(2000);
