@@ -68,6 +68,7 @@ public class BankAccount {
     protected double amount; // Protected rakha hai takki child classes access kar saken
 
     // Constructor to initialize the balance
+
     public BankAccount(double initialAmount) {
         this.amount = initialAmount;
         System.out.println("New Bank Account created with initial balance: " + initialAmount);

@@ -1,6 +1,6 @@
 package Interviews_prep.DesignPrinciple.SOLID_Principle.SingleResponsibility.GoodCode;
 
-public class Programe {
+public class Main {
     public static void main(String[] args) {
 
         Logger logger = new Logger();
